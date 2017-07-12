@@ -62,7 +62,7 @@ def generate_pdf(template_name, file_object=None, context=None, link_callback=fe
 
     """
     if not file_object:
-        file_object = StringIO.StringIO()
+        file_object = StringIO()
     if not context:
         context = {}
     tmpl = get_template(template_name)
